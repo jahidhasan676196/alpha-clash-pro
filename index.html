@@ -4,8 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alpha clash</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- costom css -->
+    <style>
+        .font-popines{
+            font-family: "Poppins", sans-serif;
+        }
+        .font-anton{
+             font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        main{
+            background-image: url(images/background.png);
+        }
+
+    </style>
 </head>
-<body>
-    
+<body class="font-popines ">
+    <main class="main bg-[#010313] min-h-screen bg-no-repeat bg-center">
+        <!-- play start section -->
+        <section class=" play-start font-anton text-[white] text-[170px] font-normal flex flex-col justify-center items-center border min-h-screen">
+            <h1 class="">ALPHABET CLASH</h1>
+            <p class="text-2xl text-[white] font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button class="btn text-[#010313] text-xl font-normal px-8 rounded-lg mt-16">Play now</button>
+        </section>
+        <!-- playground -->
+         <section class="hidden playground min-h-screen ">
+            <div class="flex flex-col justify-center items-center gap-20">
+                <!-- display -->
+                 <div class="mt-20">
+                    <div class="artboard artboard-horizontal phone-6 border-[#010313CC] border-[20px] rounded-2xl bg-[#FFFFFFB2]">
+                        <div class="flex justify-center">
+                            <p class="text-[white] text-lg bg-[#2F2941]  px-6 py-2 rounded-b-xl">Don't watch keyboard  while playing...</p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <p class="text-[#010313] text-[128px] font-semibold mt-6">Y</p>
+                        </div>
+
+                    </div>
+                 </div>
+                 <!-- keybroad -->
+                  <div>
+                    <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+                  </div>
+                  <!-- life buttob -->
+                <div class="flex justify-between w-3/4">
+                    <button class="btn bg-[#894189] text-[white] text-base rounded-full border-none px-8">
+                        Life
+                        <img src="images/Group 23.svg" alt="">
+                        <span>1</span>
+                    </button>
+                    <button class="btn bg-[#360490] text-[white] text-base rounded-full border-none px-8">
+                        Score
+                        <img src="images/monetization_on.svg" alt="">
+                        <span>1</span>
+                    </button>
+                </div>
+            </div>
+         </section>
+         <!-- play end section -->
+          <section class="hidden play-end flex justify-center items-center min-h-screen">
+            <div class="p-11 bg-gradient-to-r from-[#FFFFFF8F] to-[#FFFFFF33] rounded-2xl flex flex-col justify-center items-center gap-4">
+                <p class="text-[white] text-6xl font-extrabold">Score :<span class="font-medium">14</span></p>
+                <button class="btn text-[#010313] text-2xl font-semibold px-4">Play Now</button>
+                <p class="text-base text-[white] font-medium ">Practice will make you Pro</p>
+            </div>
+          </section>
+    </main>
 </body>
 </html>
